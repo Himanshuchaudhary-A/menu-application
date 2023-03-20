@@ -1,0 +1,19 @@
+.top-Layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.top-Layer {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 118px;
+}
+.top-Layer shape-fill {
+    fill: #FFFFFF;
+}

@@ -1,0 +1,43 @@
+.greetings{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 10%;
+     margin-top: 20%;
+}
+
+h4{
+    font-size:100%;
+    
+}
+
+.greetings p {
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .2%; /* Adjust as needed */
+    font-size: 200%;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(109, 81, 212) }
+  }
+
+.yes-button{
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
