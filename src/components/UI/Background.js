@@ -1,11 +1,11 @@
 import React from 'react'
-import './Background.css';
+import styles from './Background.module.css'
 import WelcomeMessage from './WelcomeMessage';
 import Buttons from './Buttons';
 const Background = () => {
   return (
     <div>
-    <div class="context">
+    <div className={styles.homepagebody} >
     <h1><WelcomeMessage/></h1>
     <Buttons/>
 </div>

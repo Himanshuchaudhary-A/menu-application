@@ -3,13 +3,22 @@ import './App.css';
 import Header from './components/UI/Header';
 import Background from './components/UI/Background';
 import Navbar from './components/UI/Navbar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route,Routes } from 'react-router-dom';
+import { Home } from './components/Home';
+import Menu from './components/Menu';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Background/>
-    </div>
+       
+      
+      <Routes>
+        <Route path='/' element ={<Home/>}/>
+        <Route path='/menu' element ={<Menu/>}/>
+        <Route path='/blog' element ={'Blog'}/>
+      </Routes>
+      
+    
+</div>
   );
 }
 
