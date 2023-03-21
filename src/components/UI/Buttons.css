@@ -1,6 +1,44 @@
 .Order-OnlineButton{
-    margin: 30%;
+    margin-right: 30%;
+    
 }
 .Dine-InButton{
     margin-left: 30%;
+}
+
+.buttons button{
+    margin-top: 30%;
+    padding:1%;
+    margin-left: 10%;
+    width: 10%;
+    
+    
+}
+
+.button-75:active {
+  outline: 0;
+}
+
+.button-75:hover {
+  outline: 0;
+}
+
+.button-75 span {
+  transition: all 200ms;
+}
+
+.button-75:hover span {
+  transform: scale(.9);
+  opacity: .75;
+}
+
+@media screen and (max-width: 991px) {
+  .button-75 {
+    font-size: 15px;
+    height: 50px;
+  }
+
+  .button-75 span {
+    line-height: 50px;
+  }
 }
